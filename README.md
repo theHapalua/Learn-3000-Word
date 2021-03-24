@@ -1,4 +1,4 @@
-![Learn 3000 Word](pics/America.jpeg)
+![Learn 3000 Word](pics/American-flag.jpeg)
 # Learn-3000-Word
 ## Installation
 Only thing that you have to do is download the code  
