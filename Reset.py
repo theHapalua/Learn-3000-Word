@@ -1,9 +1,13 @@
+import sys
+sys.path.append("module")
+from prints import *
+
 import os
-file = open(".Words.txt","r")
+file = open("texts/AllWords.txt","r")
 Words = file.readlines()
 file.close()
-file = open("Words.txt","w")
+file = open("texts/Words.txt","w")
 file.writelines(Words)
 file.close()
-file = open("Learnings.txt","w")
+file = open("texts/Learnings.txt","w")
 file.close()

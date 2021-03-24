@@ -1,5 +1,7 @@
+import sys
+sys.path.append("module")
 from prints import *
-file = open("Learnings.txt",'r')
+file = open("texts/Learnings.txt",'r')
 Words = file.readlines()
 file.close()
 for Word in Words:
@@ -32,7 +34,7 @@ elif AddRemoveSelection == "exit":
     pass
 else:
     errorMessage("An error occured")
-file = open("Learnings.txt","w")
+file = open("texts/Learnings.txt","w")
 for Word in Words:
     file.write(Word+"\n")
 file.close()

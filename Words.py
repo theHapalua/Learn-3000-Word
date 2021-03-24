@@ -1,11 +1,13 @@
+import sys
+sys.path.append("module")
 from prints import *
 
 import random
 
-file = open("Words.txt","r")
+file = open("texts/Words.txt","r")
 Words = file.readlines()
 file.close()
-file = open("Learnings.txt","a")
+file = open("texts/Learnings.txt","a")
 RandomIndex = random.randint(0,len(Words))
 theWord = Words.pop(RandomIndex)
 outputMessage(theWord)
@@ -14,7 +16,7 @@ LearningChoose = input("")
 if LearningChoose == "y":
     file.write(theWord+"\n")
     file.close()
-    file = open("Words.txt","w")
+    file = open("texts/Words.txt","w")
     file.writelines(Words)
     file.close()
     softwareMessage("Successfully added to Learning file")
